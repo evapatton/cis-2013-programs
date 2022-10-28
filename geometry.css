@@ -1,0 +1,44 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background: #666666;
+}
+
+#content {
+    width: 600px;
+    margin: 10px auto;
+    padding: 5px 20px;
+    background: #b54d4d;
+    border: 1px solid #990da9;
+}
+
+h1 {
+	text-align: center;
+}
+
+p {
+	color: rgb(110, 189, 242);
+	font-weight: bold;
+	text-align: center;
+}
+
+label {
+    display: block;
+    width: 20em;
+    text-align: right;
+    padding-right: 1em;
+    float: left;
+}
+
+input {
+    display: block;
+    float: left;
+    width: 100px;
+}
+
+#futureValue {
+    color: #000000;
+}
+
+br {
+    clear: left;
+}
