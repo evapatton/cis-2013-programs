@@ -16,17 +16,25 @@ var passwordCheckOld = function ()
   /* insert code
    * here */
 
- for (var count = 0; count<arrayBadPasswords.length; count++) // processing array
-{
-    if (stringPassword === arrayBadPasswords[count] || stringPassword.length <= 8) // checking against array and short password
+if (stringPassword.length <= 8) // checking against array and short password
         {
             stringOutput = stringPassword + " is a bad password."
         }
-        else
+    else
         {
+            for (var count = 0; count<arrayBadPasswords.length; count++)
+            {
+            if (stringPassword === arrayBadPasswords[count])
+            {
+                stringOutput = stringPassword + " is a bad password."
+                break;
+            }
+            else
+            {
             stringOutput = stringPassword + " is a good password."
+            }
+            }
         }
-}
 $("output").value = stringOutput; // sends back to html
 };
 
